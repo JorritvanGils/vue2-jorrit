@@ -1,17 +1,18 @@
 ***adding packages to project***
 
 # vuetify
+https://v2.vuetifyjs.com/en/getting-started/installation/#webpack-install
 npm install vuetify@v2-stable
 npm install sass@~1.32 sass-loader deepmerge -D --legacy-peer-deps
 change in webpack.dev.conf.js: 
 rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true })
 to a list with the command above and the new rule for .scss files (check file)
+create scr/plugins/vuetify.js and copy the first content codeblock from the tutorial
 add the import to main.js
 
 # Vuex
 https://www.youtube.com/watch?v=FIL0za5MzZA&list=PL1TrjkMQ8UbVSDkDaLkjpeNGkblNU8rpW&ab_channel=QiroLab
 // npm install vuex@3 --save  <- this should work, previously got stuck here
-
 
 # VeeValidate
 npm install vee-validate@2 --save

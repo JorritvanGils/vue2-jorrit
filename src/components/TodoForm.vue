@@ -1,5 +1,8 @@
 <template>
-  <div>todo form</div>
+  <div>
+    todo form
+    <v-btn>Click me!</v-btn>
+  </div>
 </template>
 
 <script>
