@@ -1,0 +1,43 @@
+***adding packages to project***
+
+# vuetify
+npm install vuetify@v2-stable
+npm install sass@~1.32 sass-loader deepmerge -D --legacy-peer-deps
+change in webpack.dev.conf.js: 
+rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true })
+to a list with the command above and the new rule for .scss files (check file)
+add the import to main.js
+
+# Vuex
+https://www.youtube.com/watch?v=FIL0za5MzZA&list=PL1TrjkMQ8UbVSDkDaLkjpeNGkblNU8rpW&ab_channel=QiroLab
+// npm install vuex@3 --save  <- this should work, previously got stuck here
+
+
+# VeeValidate
+npm install vee-validate@2 --save
+add import VeeValidate from 'vee-validate' and Vue.use(VeeValidate) to main.js
+
+***Creating a new vue project via CLI***
+cd to /media/jorrit$
+sudo npm install -g vue-cli / sudo npm install -g vue-cli@2
+// vue create vue-jorrit
+jorrit@jorrit-HP-ProBook-440-G6:/media/jorrit$ vue init webpack vue-jorrit
+? Project name vue-jorrit
+? Project description vue.js project
+? Author vangilsjorrit@gmail.com
+? Vue build standalone
+? Install vue-router? Yes
+? Use ESLint to lint your code? Yes
+? Pick an ESLint preset Standard
+? Set up unit tests Yes
+? Pick a test runner noTest
+? Setup e2e tests with Nightwatch? No
+? Should we run `npm install` for you after the project has been created? (recommended) npm
+cd vue-jorrit
+npm run dev
+
+***vue-cdn-jorrit***
+creating and cd into directory vue-project-jorrit
+npm init -y
+npm install vue@2 --save
+change in the index.js file "https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js" to: <script src="node_modules/vue/dist/vue.js"></script>. We know not use the cdn (Content Delivery Network) anymore, because we have vue locally installed.
