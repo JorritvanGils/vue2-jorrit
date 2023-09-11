@@ -1,5 +1,5 @@
 <template>
-    <div>Todo</div>
+  <div> welcome to the homepage </div>
 </template>
 
 <script>

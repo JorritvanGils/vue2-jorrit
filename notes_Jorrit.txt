@@ -1,5 +1,9 @@
 ***adding packages to project***
 
+# Router
+npm install vue-router@3
+https://www.youtube.com/watch?v=Zflo2-s4768&ab_channel=NetNinja
+
 # vuetify
 https://v2.vuetifyjs.com/en/getting-started/installation/#webpack-install
 npm install vuetify@v2-stable
@@ -9,6 +13,11 @@ rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true
 to a list with the command above and the new rule for .scss files (check file)
 create scr/plugins/vuetify.js and copy the first content codeblock from the tutorial
 add the import to main.js
+put the v-btn in a div
+  <div>
+    todo form
+    <v-btn>Click me!</v-btn>
+  </div>
 
 # Vuex
 https://www.youtube.com/watch?v=FIL0za5MzZA&list=PL1TrjkMQ8UbVSDkDaLkjpeNGkblNU8rpW&ab_channel=QiroLab
