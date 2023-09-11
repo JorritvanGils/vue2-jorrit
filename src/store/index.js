@@ -1,71 +1,90 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
 
+import TodoModule from './modules/todo'
+
 Vue.use(Vuex)
 
+const state = {}
+const actions = ({})
+const mutations = ({})
+const getters = ({})
+
+const modules = {
+  todo: TodoModule
+}
+
 export default new Vuex.Store({
-  state: {
-    skills: [
-        {
-            title: 'Vuex',
-            completed: false
-        },
-        {
-            title: 'Vuetify',
-            completed: false
-        },
-        {
-          title: 'Router',
-          completed: false
-      }
-    ],
-    todos: [
-      {
-          title: 'Todo item a',
-          completed: false
-      },
-      {
-          title: 'Todo item b',
-          completed: false
-      }
-    ]
-  },
-  getters: {
-    completedTodos (state) {
-      return state.todos.filter(todo => {
-        return todo.completed === true
-      }).length
-    },
-    pendingTodos (state) {
-      return state.todos.filter(todo => {
-        return todo.completed === false
-      }).length
-    }
-  },
-  mutations: {
-    NEW_TODO (state, todoItem) {
-      state.todos.push({
-        title: todoItem,
-        completed: false
-      })
-    },
-    DELETE_TODO (state, todoItem) {
-      let index = state.todos.indexOf(todoItem)
-      state.todos.splice(index, 1)
-    },
-    TOGGLE_TODO_STATUS (state, todoItem) {
-      todoItem.completed = !todoItem.completed
-    }
-  },
-  actions: {
-    addNewTodo ({commit}, todoItem) {
-      commit('NEW_TODO', todoItem)
-    },
-    deleteTodo ({commit}, todoItem) {
-      commit('DELETE_TODO', todoItem)
-    },
-    toggleTodoStatus ({commit}, todoItem) {
-      commit('TOGGLE_TODO_STATUS', todoItem)
-    }
-  }
+  state,
+  actions,
+  mutations,
+  getters,
+  modules
 })
+
+// export default new Vuex.Store({
+//   state: {
+//     skills: [
+//         {
+//             title: 'Vuex',
+//             completed: false
+//         },
+//         {
+//             title: 'Vuetify',
+//             completed: false
+//         },
+//         {
+//           title: 'Router',
+//           completed: false
+//       }
+//     ],
+//     todos: [
+//       {
+//           title: 'Todo item a',
+//           completed: false
+//       },
+//       {
+//           title: 'Todo item b',
+//           completed: false
+//       }
+//     ]
+//   },
+//   getters: {
+//     completedTodos (state) {
+//       return state.todos.filter(todo => {
+//         return todo.completed === true
+//       }).length
+//     },
+//     pendingTodos (state) {
+//       return state.todos.filter(todo => {
+//         return todo.completed === false
+//       }).length
+//     }
+//   },
+//   mutations: {
+//     NEW_TODO (state, todoItem) {
+//       state.todos.push({
+//         title: todoItem,
+//         completed: false
+//       })
+//     },
+//     DELETE_TODO (state, todoItem) {
+//       let index = state.todos.indexOf(todoItem)
+//       state.todos.splice(index, 1)
+//     },
+//     TOGGLE_TODO_STATUS (state, todoItem) {
+//       todoItem.completed = !todoItem.completed
+//     }
+//   },
+//   actions: {
+//     addNewTodo ({commit}, todoItem) {
+//       commit('NEW_TODO', todoItem)
+//     },
+//     deleteTodo ({commit}, todoItem) {
+//       commit('DELETE_TODO', todoItem)
+//     },
+//     toggleTodoStatus ({commit}, todoItem) {
+//       commit('TOGGLE_TODO_STATUS', todoItem)
+//     }
+//   }
+// })
