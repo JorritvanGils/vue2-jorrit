@@ -8,9 +8,7 @@ https://www.youtube.com/watch?v=Zflo2-s4768&ab_channel=NetNinja
 https://v2.vuetifyjs.com/en/getting-started/installation/#webpack-install
 npm install vuetify@v2-stable
 npm install sass@~1.32 sass-loader deepmerge -D --legacy-peer-deps
-change in webpack.dev.conf.js: 
-rules: utils.styleLoaders({ sourceMap: config.dev.cssSourceMap, usePostCSS: true })
-to a list with the command above and the new rule for .scss files (check file)
+at the bottom of webpack.dev.conf.js, paste the new rule for .scss files (see tutorial) 
 create scr/plugins/vuetify.js and copy the first content codeblock from the tutorial
 add the import to main.js
 put the v-btn in a div
