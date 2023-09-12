@@ -23,7 +23,7 @@ export const ADD_TO_CART = (state, { product, quantity }) => {
     })
 }
 
-export const SET_CART = (state, cartItems) => {
-    console.log('cartItems', cartItems)
-    state.cart = cartItems
-}
+// export const SET_CART = (state, cartItems) => {
+//     console.log('cartItems', cartItems)
+//     state.cart = cartItems
+// }

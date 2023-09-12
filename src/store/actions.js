@@ -28,9 +28,9 @@ export const addToCart = ({ commit }, { product, quantity }) => {
         })
 }
 
-export const getCartItems = ({ commit }) => {
-    axios.get('http://localhost:3000/cart')
-        .then(response => {
-            commit('SET_CART', response.data)
-        })
-}
+// export const getCartItems = ({ commit }) => {
+//     axios.get('http://localhost:3000/cart')
+//         .then(response => {
+//             commit('SET_CART', response.data)
+//         })
+// }

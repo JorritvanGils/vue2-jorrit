@@ -3,7 +3,7 @@
     style="min-width:320px right:0; left:auto"
     aria-labelledby="triggerId"
     >
-        <div v-for="item in cart" :key="item.product">
+        <div v-for="item in cart" :key="item.product.id">
             <div class="px-2 d-flex justify-content-between">
                 <div>
                     <strong>{{item.product.title}}</strong>
@@ -33,11 +33,10 @@ export default {
         cartTotalPrice () {
             return this.$store.getters.cartTotalPrice
         }
-    },
-    mounted () {
-        this.$store.dispatch('getCartItems')
-        console.log('this.$store.state.cart', this.$store.state.cart)
     }
+    // mounted () {
+    //     this.$store.dispatch('getCartItems')
+    // }
 }
 </script>
 
