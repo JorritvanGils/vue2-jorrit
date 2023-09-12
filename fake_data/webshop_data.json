@@ -1,0 +1,101 @@
+{
+  "cart": [
+    {
+      "product_id": 1,
+      "quantity": 1,
+      "id": 1
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "title": "Widget",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam vehicula viverra blandit.",
+      "image": "https://via.placeholder.com/150x100",
+      "price": 68,
+      "created_at": "2019-10-31 20:51:37",
+      "updated_at": "2019-10-31 20:51:37"
+    },
+    {
+      "id": 2,
+      "title": "Gadget",
+      "description": "Pellentesque non turpis vel augue convallis tempor. Cras euismod justo nec nisi viverra scelerisque.",
+      "image": "https://via.placeholder.com/150x100",
+      "price": 42,
+      "created_at": "2019-11-01 10:15:22",
+      "updated_at": "2019-11-01 10:15:22"
+    },
+    {
+      "id": 3,
+      "title": "Accessory",
+      "description": "Fusce eget ante eu metus bibendum accumsan. Quisque eget quam ut enim tincidunt semper.",
+      "image": "https://via.placeholder.com/150x100",
+      "price": 68,
+      "created_at": "2019-10-31 20:51:37",
+      "updated_at": "2019-10-31 20:51:37"
+    },
+    {
+      "id": 4,
+      "title": "Gizmo",
+      "description": "Aenean bibendum, ipsum id mattis vulputate, metus eros varius urna, nec aliquet augue eros non ipsum.",
+      "image": "https://via.placeholder.com/150x100",
+      "price": 68,
+      "created_at": "2019-10-31 20:51:37",
+      "updated_at": "2019-10-31 20:51:37"
+    },
+    {
+      "id": 5,
+      "title": "Tool",
+      "description": "Vestibulum tristique magna eu turpis tincidunt, ut venenatis libero bibendum. Sed non metus sem.",
+      "image": "https://via.placeholder.com/150x100",
+      "price": 68,
+      "created_at": "2019-10-31 20:51:37",
+      "updated_at": "2019-10-31 20:51:37"
+    },
+    {
+      "id": 6,
+      "title": "Device",
+      "description": "Integer vel ex ut justo tristique gravida. Suspendisse potenti. Vivamus laoreet enim nec justo auctor.",
+      "image": "https://via.placeholder.com/150x100",
+      "price": 68,
+      "created_at": "2019-10-31 20:51:37",
+      "updated_at": "2019-10-31 20:51:37"
+    },
+    {
+      "id": 7,
+      "title": "Appliance",
+      "description": "Sed ut enim nec libero venenatis fermentum vel nec odio. Suspendisse eu tortor urna.",
+      "image": "https://via.placeholder.com/150x100",
+      "price": 68,
+      "created_at": "2019-10-31 20:51:37",
+      "updated_at": "2019-10-31 20:51:37"
+    },
+    {
+      "id": 8,
+      "title": "Machine",
+      "description": "Nunc nec justo ut arcu fringilla eleifend. Cras facilisis euismod est, et malesuada justo tristique nec.",
+      "image": "https://via.placeholder.com/150x100",
+      "price": 68,
+      "created_at": "2019-10-31 20:51:37",
+      "updated_at": "2019-10-31 20:51:37"
+    },
+    {
+      "id": 9,
+      "title": "Instrument",
+      "description": "Mauris nec ipsum quis arcu tempus volutpat. Sed sit amet massa eu est ultrices commodo.",
+      "image": "https://via.placeholder.com/150x100",
+      "price": 68,
+      "created_at": "2019-10-31 20:51:37",
+      "updated_at": "2019-10-31 20:51:37"
+    },
+    {
+      "id": 10,
+      "title": "Utensil",
+      "description": "Vestibulum sed felis eget turpis gravida bibendum. Nullam a velit venenatis, sodales odio eget, mattis metus.",
+      "image": "https://via.placeholder.com/150x100",
+      "price": 68,
+      "created_at": "2019-10-31 20:51:37",
+      "updated_at": "2019-10-31 20:51:37"
+    }
+  ]
+}

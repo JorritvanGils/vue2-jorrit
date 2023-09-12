@@ -1,25 +1,42 @@
 <template>
-  <nav class="top-nav">
-    <router-link to="/"> <i class="fa fa-home"></i> Home </router-link>
-    <router-link to="/about"><i class="fa fa-info-circle"></i> About</router-link>
-    <router-link to="/todopage"><i class="fa fa-list"></i> Todo page</router-link>
+  <div>
+    <nav class="navbar navbar-expand navbar-dark bg-dark">
+      <div class="container">
+        <div class="nav navbar-nav">
+          <router-link to="/" class="nav-tem nav-link active">Home</router-link>
+          <a class="nav-item nav-link" href="#">Product</a>
+        </div>
 
-  </nav>
+        <div>
+          <div class="dropdown open">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="triggerId" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false"
+            >{{cartItemCount}} Cart</button>
+            <div @click="$event.stopPropagation()">
+              <mini-cart></mini-cart>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
 </template>
 
 <script>
-export default {}
+import MiniCart from '@/components/MiniCart.vue'
+export default {
+  name: 'AppHeader',
+  components: {
+    MiniCart
+  },
+  computed: {
+    cartItemCount () {
+      return this.$store.getters.cartItemCount
+    }
+  }
+}
 </script>
 
-<style scoped>
-.top-nav {
-  background-color: #cad7f4; /* Set the background color of the top bar */
-  color: #fff; /* Set the text color to white */
-  padding: 10px 0; /* Add some padding for spacing */
-}
+<style>
 
-.fa {
-  font-size: 18px; /* Adjust the font size of Font Awesome icons */
-  margin-right: 5px; /* Add some spacing between the icon and text */
-}
 </style>

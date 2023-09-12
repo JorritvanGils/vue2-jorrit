@@ -1,4 +1,19 @@
+ <!-- <nav class="top-nav">
+    <router-link to="/"> <i class="fa fa-home"></i> Home </router-link>
+    <router-link to="/about"><i class="fa fa-info-circle"></i> About</router-link>
+    <router-link to="/todopage"><i class="fa fa-list"></i> Todo page</router-link>
+  </nav> -->
+
 ***adding packages to project***
+
+# Bootstrap
+npm install bootstrap@4
+npm install jquery@3
+npm install popper.js
+
+add this to main.js
+import "bootstrap"
+import "bootstrap/dist/css/bootstrap.min.css"
 
 # Router
 npm install vue-router@3
@@ -8,7 +23,7 @@ https://www.youtube.com/watch?v=Zflo2-s4768&ab_channel=NetNinja
 https://v2.vuetifyjs.com/en/getting-started/installation/#webpack-install
 npm install vuetify@v2-stable
 npm install sass@~1.32 sass-loader deepmerge -D --legacy-peer-deps
-at the bottom of webpack.dev.conf.js, paste the new rule for .scss files (see tutorial) 
+check the webpack.dev.conf.js file for how to paste the new .scss file rules from the above tutorial
 create scr/plugins/vuetify.js and copy the first content codeblock from the tutorial
 add the import to main.js
 put the v-btn in a div
@@ -18,8 +33,15 @@ put the v-btn in a div
   </div>
 
 # Vuex
-https://www.youtube.com/watch?v=FIL0za5MzZA&list=PL1TrjkMQ8UbVSDkDaLkjpeNGkblNU8rpW&ab_channel=QiroLab
+//followed this tutorial
+https://www.youtube.com/playlist?list=PL1TrjkMQ8UbVSDkDaLkjpeNGkblNU8rpW
 // npm install vuex@3 --save  <- this should work, previously got stuck here
+video 3 -> generate fake json data:
+- install JSON formatter extention chrome
+- sudo npm install -g json-server
+- create fake_data/webshop_data.json & run: json-server --watch fake_data/webshop_data.json
+video 3 import axios: npm install axios
+
 
 # VeeValidate
 npm install vee-validate@2 --save
