@@ -3,7 +3,7 @@
     style="min-width:320px right:0; left:auto"
     aria-labelledby="triggerId"
     >
-        <div v-for="item in cart" :key="item.product" v-if="item">
+        <div v-for="item in cart" :key="item.product">
             <div class="px-2 d-flex justify-content-between">
                 <div>
                     <strong>{{item.product.title}}</strong>
